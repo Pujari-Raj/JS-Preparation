@@ -104,6 +104,7 @@ const OriginalObject = {
   hobbies: ["reading", "painting"],
 };
 
+// to create a deep-copy we have to use this JSON methods
 const CopiedObject = JSON.parse(JSON.stringify(OriginalObject));
 
 console.log(OriginalObject); // { name: 'John', age: 30, hobbies: ['reading', 'painting'] }
