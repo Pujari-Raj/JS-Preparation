@@ -1,4 +1,4 @@
-// currying in js
+// function currying in js
 
 //Currying is a JS concept which transforms a function with multiple arguments into a nested series of functions, each taking a single argument.
 //It helps us creating higher order functions. It is useful in building modular and reusable code
