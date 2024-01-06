@@ -26,4 +26,6 @@ console.log(message); // ReferenceError: message is not defined
 
 /**
  * In this example, the message variable is defined inside the IIFE and is only accessible within the IIFE's scope. When trying to access message outside the IIFE, a ReferenceError is thrown because the variable is not defined in the global scope.
+
+
  */
