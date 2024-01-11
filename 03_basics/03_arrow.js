@@ -19,7 +19,7 @@ const user = {
 /**
  * Reason we can't access username using this
  *  chai() is a standalone function and not a method of an object, this does not refer to any specific object. Therefore, this.username will not give you the value of the username variable defined within the chai() function.
- * If you want to access the username variable within the chai() function,
+ * If you want to access the username variable within the chai() function, directly write variable-name & access it.
  */
 
 // function chai(){
