@@ -1,4 +1,8 @@
 // for loop
+/*
+ The for loop is a traditional loop that has been part of JavaScript since its early versions, it is useful when you know the exact number of iterations you want.
+ */
+//IT DOES NOT RETURN ANYTHING SPECIFIC; IT IS USED FOR ITERATION AND CONTROL FLOW.
 
 for (let i = 0; i < 10; i++) {
   const element = i;

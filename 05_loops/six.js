@@ -15,6 +15,7 @@ values = nammaheros.forEach((item) => {
 });
 
 // filter, Use filter when you want to create a new array that contains only the elements that satisfy a certain condition.
+// RETURNS: AN ARRAY CONTAINING ELEMENTS THAT SATISFY A GIVEN CONDITION
 
 /**
  * The filter method creates a new array with all the elements that pass a specific condition. It takes a callback function that is executed for each element, and if the callback returns true, the element is included in the new array; otherwise, it is excluded.

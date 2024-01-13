@@ -2,7 +2,7 @@
 
 /**
  * The while loop is an entry-controlled loop, meaning that the loop condition is checked before the execution of the loop body.
- * if condition is 'false' it will not execute the code
+ * if condition is 'false' it will not execute the code at-least for once
  */
 let i = 10;
 
@@ -24,7 +24,7 @@ while (arr < heroesArray.length) {
 
 /**
  * The do-while loop is an exit-controlled loop, meaning that the loop body is executed at least once, and then the loop condition is checked.
- * if condition is 'false' it will atleast run a code for once.
+ * even if the condition is 'false' it will run a code atleast for once.
  */
 
 let teamScore = 299
