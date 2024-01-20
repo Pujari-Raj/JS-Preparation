@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="interview-question.js"></script>
+    <style>
+      body {
+        background: black;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner">
+        <button id="button">Click me</button>
+      </div>
+    </div>
+
+    <script>
+      const outer = document.getElementById("outer");
+      const inner = document.getElementById("inner");
+      const button = document.getElementById("button");
+
+      // code for event bubbling
+      //   outer.addEventListener("click", () => {
+      //     console.log("Outer div clicked");
+      //   });
+
+      //   inner.addEventListener("click", () => {
+      //     console.log("Inner div clicked");
+      //   });
+
+      //   button.addEventListener("click", () => {
+      //     console.log("Button clicked");
+      //   });
+
+      // code for event capturing
+      outer.addEventListener(
+        "click",
+        () => {
+          console.log("Outer div clicked");
+        },
+        true
+      );
+
+      inner.addEventListener(
+        "click",
+        () => {
+          console.log("Inner div clicked");
+        },
+        true
+      );
+
+      button.addEventListener(
+        "click",
+        () => {
+          console.log("Button clicked");
+        },
+        true
+      );
+    </script>
+  </body>
+</html>
