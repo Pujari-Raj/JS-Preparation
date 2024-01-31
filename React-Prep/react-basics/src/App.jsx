@@ -7,6 +7,8 @@ import ExpensiveCalculation from "./components/ExpensiveCalculation";
 import ProductCard from "./components/ProductCard";
 import Stateful from "./components/Stateful";
 import Pages from "./components/Pages";
+import RemoveItem from "./components/RemoveItem";
+import HomePage from "./components/HomePage";
 
 function App() {
   const productProps = {
@@ -20,6 +22,16 @@ function App() {
 
   return (
     <>
+     {/* <Router> */}
+        {/* <Routes>
+          <>
+            <Route path="/" exact element={<Pages page="" />} />
+            <Route path="/about" element={<Pages page="about" />} />
+            <Route path="/contact" element={<Pages page="contact" />} />
+            <Route path="*" element={<NotFound />} />
+          </>
+        </Routes> */}
+      {/* </Router> */}
       {/* <ProductCard props={productProps} /> */}
       {/* <Stateful/> */}
       {/* <ErrorBoundary>
@@ -29,15 +41,10 @@ function App() {
         <button onClick={() => setCount(prevCount => prevCount + 1)} style={{border: "1px solid", color: "red"}}>Increment</button>
         <ExpensiveCalculation value={count} />
       </div> */}
-      <Router>
-        <Routes>
-          <>
-            <Route path="/" exact element={<Pages page="" />} />
-            <Route path="/about" element={<Pages page="about" />} />
-            <Route path="/contact" element={<Pages page="contact" />} />
-          </>
-        </Routes>
-      </Router>
+     
+
+      {/* <RemoveItem/> */}
+      <HomePage />
     </>
   );
 }
