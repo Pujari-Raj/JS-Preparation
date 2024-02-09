@@ -31,4 +31,23 @@ const ExpensiveCalculation = ({ value }) => {
   );
 };
 
-export default ExpensiveCalculation;
+// export default ExpensiveCalculation;
+
+import React, { Suspense } from 'react';
+
+// Define a component using lazy loading
+const LazyLoadedComponent = React.lazy(() => import('./LazyLoadedComponent'));
+
+function App() {
+  return (
+    <div>
+      <h1>Lazy Loading Example</h1>
+      <Suspense fallback={<div>Loading...</div>}>
+        {/* Wrap the lazy-loaded component in Suspense and provide a fallback */}
+        <LazyLoadedComponent />
+      </Suspense>
+    </div>
+  );
+}
+
+export default App;
