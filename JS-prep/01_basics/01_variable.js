@@ -1,10 +1,10 @@
 const accountId = 180854;
 let accountEmail = "demouser@gmail.com";
-let accountIFSC; 
+let accountIFSC;
 // returnd undefined , In JS any variable can has beeen initiliazed with any value returns as undefined
 var accountPassword = "DEMO";
 /**
- * Prefer !to use var for declaring the variables, bcz of the issue in 
+ * Prefer !to use var for declaring the variables, bcz of the issue in
  * var has function scope, meaning it is only scoped to the nearest function, not to *the block where it is declared. This can lead to unexpected behavior and makes it *harder to manage variables in larger codebases.
  *let and const have block scope, which means they are limited to the block (enclosed * by curly braces) in which they are defined. This behavior is more intuitive and   helps prevent unintended variable hoisting and scope-related bugs.
  */
