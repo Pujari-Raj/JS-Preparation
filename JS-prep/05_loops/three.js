@@ -26,7 +26,6 @@ for (const countries of countriesmap) {
 }
 
 /**
- *
  * The entries() method of a Map object returns a new iterator object that contains an array of [key, value] pairs for each element in the Map, in insertion order.
  */
 for (const [key, value] of countriesmap.entries()) {

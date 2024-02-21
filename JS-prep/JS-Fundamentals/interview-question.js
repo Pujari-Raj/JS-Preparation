@@ -109,13 +109,13 @@ function makeHttpRequest(url) {
   });
 }
 
-// makeHttpRequest("https://dummyjson.com/users/1")
-//   .then((data) => {
-//     console.log("Data received:", data);
-//   })
-//   .catch((error) => {
-//     console.error("Error occurred:", error);
-//   });
+makeHttpRequest("https://dummyjson.com/users/1")
+  .then((data) => {
+    console.log("Data received:", data);
+  })
+  .catch((error) => {
+    console.error("Error occurred:", error);
+  });
 
 // basic-example
 const myFirstPromise = new Promise((resolve, reject) => {
