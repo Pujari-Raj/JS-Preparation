@@ -8,7 +8,7 @@ const nammaheros = ["virat", "rahul", "vvs", "kumble"];
 // let values = nammaheros.forEach((item) => console.log(item));
 
 /* for..each loop doesn't return value, The purpose of forEach is to perform an operation on each element of the array, rather than producing a new array or a specific result.
- */
+ */ 
 values = nammaheros.forEach((item) => {
   // console.log(item)
   return item;

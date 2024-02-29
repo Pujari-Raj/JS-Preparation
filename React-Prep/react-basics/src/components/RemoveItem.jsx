@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const RemoveItem = () => {
-  const [items, setitems] = useState(["item1", "item2", "item3", "item4"]);
+  const [items, setitems] = useState(["item1", "item2", "item3", "item4","item5", "item6", "item7", "item8"]);
 
   //
   const removeItem = (indexToRemove) => {

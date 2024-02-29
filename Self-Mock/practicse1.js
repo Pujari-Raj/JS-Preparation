@@ -79,6 +79,7 @@ const teacher = {
 
 // console.log(teacher)
 
+// object using new keyword (use 'this')
 function bowler(name, skill) {
   this.name = name;
   this.skill = skill;
