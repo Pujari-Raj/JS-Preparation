@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul > li {
+  list-style-type: square;
+}
+
+/* form */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.Signup-form {
+  background-color: white;
+  margin: 80px auto;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 0px 25px rgba(92, 99, 105, 0.2);
+  height: 400px;
+  width: 400px;
+}
+
+.Signup-form .inputContainer {
+  position: relative;
+  height: 50px;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+.inputContainer input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+.inputContainer label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: white;
+  color: #696b6f;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+input:focus + label {
+  top: -10px;
+  left: 13px;
+  z-index: 9;
+  font-size: 14px;
+  font-weight: 600;
+  color: purple;
+}
+
+input:focus {
+  border: 2px solid purple;
+}
+
+.input:not(:placeholder-shown) + .label {
+  top: -10px;
+  left: 13px;
+  z-index: 9;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  display: block;
+  border: none;
+  background-color: purple;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #9867c5;
+}
+
+.error-text {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
