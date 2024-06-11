@@ -13,16 +13,16 @@ function subTwoNumbers(number1, number2) {
 const result = subTwoNumbers(12, 6);
 // console.log(result);
 
-function loginUserMessage(username = "sammy") {
+function loginUserMessage(username ) {
   if (!username) {
     console.log("PLease enter a username");
-    return;
+    return
   }
   return `${username} just logged in`;
 }
 
 // console.log(loginUserMessage("swwpson"));
-// console.log(loginUserMessage());
+console.log(loginUserMessage());
 
 // using js spread-operator
 function calculateCartPrice(...num1) {

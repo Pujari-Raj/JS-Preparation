@@ -12,11 +12,11 @@ const myArr2 = new Array(1, 2, 3, 4);
 // myArr.push(7)
 // myArr.pop() / delete's the last value of array
 
-// myArr.unshift(9) //nstances adds the specified elements to the beginning of an array
+// myArr.unshift(9) //Instances adds the specified elements to the beginning of an array
 // myArr.shift() //removes the first element from an array
 
 // console.log(myArr.includes(9));// checks if given value is present
-// console.log(myArr.indexOf(3));// checks the index of given value
+// console.log(myArr.indexOf(3));// returns the index of given value
 
 // const newArr = myArr.join()
 
@@ -27,7 +27,7 @@ const myArr2 = new Array(1, 2, 3, 4);
 const alphaarray = ["a", "b", "c", "d", "e"];
 
 //instances shallow copies part of this array to another location in the same array and returns this array
-// console.log(alphaarray.copyWithin(1,4));
+console.log(alphaarray.copyWithin(1,4));
 
 //filter
 const words = ["spray", "elite", "exuberant", "destruction", "present"];
@@ -36,13 +36,13 @@ const res = words.filter((word) => word.length > 5);
 /**
  * creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
  */
-// console.log(res);
+console.log(res);
 
 //forEach
 
 const array1 = ["a", "b", "c"];
 
-// executes a provided function once for each array element.
+// executes a provided function once for each element of an array.
 // array1.forEach((element) => console.log(element));
 
 // map
@@ -61,10 +61,21 @@ const citrus = fruits.slice(1, 3);
  * returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items
  */
 
+/**
+ * uses - Used to create a shallow copy of a portion of an array.
+ * - slice does not modify the original array
+ * - Returns a new array containing the extracted elements.
+ */
+
 // console.log(fruits); // fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
 // console.log(citrus); // citrus contains ['Orange','Lemon']
 
-// splice
+// splice,  method in JavaScript returns a shallow copy of the removed elements from the original array. It does not create a deep copy of the elements.
+
+/* uses- Used to add, remove, or replace elements in an array.
+    - Yes, splice modifies the original array.
+    - Returns an array containing the deleted elements.
+*/
 // console.log("A ", myArr);
 
 const myn1 = myArr.slice(1, 3);
@@ -86,15 +97,15 @@ const originalObject = {
 
 // const copiedObject = Object.assign({}, originalObject);
 
-const copiedObject = originalObject;
-// console.log(originalObject);
-// console.log(copiedObject);
+const copiedObject = {...originalObject} ;
+console.log(originalObject);
+console.log(copiedObject);
 
 originalObject.name = "Jane";
 
-// console.log("AFTER-MODIFIYING-NAME");
-// console.log(originalObject);
-// console.log(copiedObject);
+console.log("AFTER-MODIFIYING-NAME");
+console.log(originalObject);
+console.log(copiedObject);
 
 // deep-copy-eg
 
@@ -117,9 +128,9 @@ console.log("AFTER-MODIFIYING-NAME");
 console.log(OriginalObject); // { name: 'Jane', age: 30, hobbies: ['reading', 'painting'] }
 console.log(CopiedObject); // { name: 'John', age: 30, hobbies: ['reading', 'painting'] }
 
-// Modifying a nested array
-OriginalObject.hobbies.push("cooking");
+// // Modifying a nested array
+// OriginalObject.hobbies.push("cooking");
 
-console.log("AFTER-MODIFIYING-NESTED-OBJECT");
-console.log(OriginalObject); // { name: 'Jane', age: 30, hobbies: ['reading', 'painting', 'cooking'] }
-console.log(CopiedObject); // { name: 'John', age: 30, hobbies: ['reading', 'painting'] }
+// console.log("AFTER-MODIFIYING-NESTED-OBJECT");
+// console.log(OriginalObject); // { name: 'Jane', age: 30, hobbies: ['reading', 'painting', 'cooking'] }
+// console.log(CopiedObject); // { name: 'John', age: 30, hobbies: ['reading', 'painting'] }

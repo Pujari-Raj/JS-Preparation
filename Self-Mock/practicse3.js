@@ -1,4 +1,4 @@
-// async await
+// async await(use only .then.catch & use async-await keyword on function, fetch, response obj)
 
 async function getData() {
   try {
@@ -32,6 +32,8 @@ By using await before response.json(), we are waiting for the promise returned b
   }
 }
 
+// calling a function
+// (use only async-await keyword on function,response obj)
 async function getUsersData() {
   const data = await getData();
   if (data) {

@@ -5,7 +5,7 @@
 const heroesArray = ["hatim", "kokoman", "shaktiman"];
 
 heroesArray.forEach(function (item) {
-  // console.log(item);
+  console.log(item);
 });
 
 // using arrow function
@@ -39,5 +39,5 @@ const myCoding = [
 ];
 
 myCoding.forEach((item) => {
-  console.log(item.languageName);
+  // console.log(item.languageName);
 });

@@ -13,10 +13,11 @@ const numbers = ["10", "20", "30", "40"];
 // we can chain map, filter
 const nums = numbers
   .map((num) => num * 5)
-  .map((num) => num - 10)
-  .filter((num) => num > 120);
 
-// console.log(nums);
+  // .map((num) => num - 10)
+  // .filter((num) => num > 120);
+
+console.log(nums);
 
 // reduce, Use reduce when you want to perform calculations on an array and obtain a single result, such as finding the sum or the maximum value.
 // Returns: A single value (accumulator) obtained by applying a function to each element of the array, reducing it to a single value.
@@ -75,4 +76,4 @@ const cartValue = shoppingCart.reduce(
   (acc, item) => (acc = acc + item.price),
   0
 );
-console.log(cartValue);
+console.log("cartValue",cartValue);

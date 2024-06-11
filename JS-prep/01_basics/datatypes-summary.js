@@ -2,13 +2,14 @@
 
 //  Primitive
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
 const score = 500;
 const scoreValue = 500.3;
 
 const isLoggedIn = false;
 const outsideTemp = null;
+
 let userEmail;
 
 const id = Symbol("423");
@@ -16,11 +17,12 @@ const anotherId = Symbol("423");
 
 // console.log(id === anotherId);
 
-// Reference (Non primitive)
+// Reference (**Non primitive**)
 
 // Array, Objects, Functions
 
 const heros = ["pokemon", "hatim", "antman"];
+
 let myObj = {
   name: "remo",
   age: 22,
@@ -84,26 +86,24 @@ newusername = "nayahai";
 
 /**
  * When we pass a value to variable that is primtive daatatype it gives a
- * copy of it  
+ * copy of it and not original Value
  */
 console.log(username);
 console.log(newusername);
 
-
-
 let userdetails = {
   email: userEmail,
-  dob : "12/07/78",
-}
+  dob: "12/07/78",
+};
 
-let newuserdetails = userdetails
+let newuserdetails = userdetails;
 
 /**
  * When we pass a value to variable that is non-primtive daatatype it gives a
  * reference of it & not the copy of it.
  */
 
-newuserdetails.email = "newuser@co.in"
+newuserdetails.email = "newuser@co.in";
 
 console.log(userdetails.email);
 console.log(userdetails.email);

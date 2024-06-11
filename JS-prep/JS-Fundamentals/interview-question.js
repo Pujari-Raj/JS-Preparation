@@ -7,7 +7,7 @@ let newName = name.toUpperCase(); // Returns a new string
 function exampleConst() {
   const z = 10;
   if (true) {
-    // z = 20; // ut will throw error
+    // z = 20; // it will throw error
     console.log(z);
   }
   console.log(z); // Output: 10 (z is not affected by the inner block)
@@ -91,8 +91,8 @@ function asyncFunction() {
   console.log("Operation 3");
 }
 
-// asyncFunction();
-// console.log('After function');
+asyncFunction();
+console.log('After function');
 
 //Promises
 function makeHttpRequest(url) {
@@ -109,13 +109,14 @@ function makeHttpRequest(url) {
   });
 }
 
-makeHttpRequest("https://dummyjson.com/users/1")
-  .then((data) => {
-    console.log("Data received:", data);
-  })
-  .catch((error) => {
-    console.error("Error occurred:", error);
-  });
+// consuming promise
+// makeHttpRequest("https://dummyjson.com/users/1")
+//   .then((data) => {
+//     console.log("Data received:", data);
+//   })
+//   .catch((error) => {
+//     console.error("Error occurred:", error);
+//   });
 
 // basic-example
 const myFirstPromise = new Promise((resolve, reject) => {
@@ -187,7 +188,6 @@ let closureExample = outerFunction();
 // Call the inner function, which still has access to outerVariable
 // console.log(closureExample()); // Output: I am outer!
 
-
 // diff between "explicitly" and "implicitly" called
 
 //explicitly
@@ -202,7 +202,7 @@ console.log(result); // Output: 12
 // implicitly (it does not return anything)
 // Implicit function call
 function greet(name) {
- return console.log(`Hello, ${name}!`);
+  return console.log(`Hello, ${name}!`);
 }
 
 let greetingFunction = greet; // Assigning the function to another variable
@@ -216,8 +216,8 @@ var fname = "pujatri";
 
 function develoepr(dsgtn) {
   const role = dsgtn;
-  return role
+  return role;
 }
 
 let pstn = develoepr("fend");
-console.log(pstn); 
+// console.log(pstn);

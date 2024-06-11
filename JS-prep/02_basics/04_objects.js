@@ -4,7 +4,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "Swepson"
 tinderUser.isLoggedIn = true
 
-// console.log(tinderUser);
+console.log(tinderUser);
 
 const regularUser = {
     email: "Swepson@hindi.com",

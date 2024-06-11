@@ -49,7 +49,6 @@ function addone(num){
     return num + 1
 }
 
-
 // you cannot call a function before declaration, bcz we defined a function using function expression.
 
 addTwo(5)

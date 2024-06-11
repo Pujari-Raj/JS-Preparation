@@ -12,8 +12,8 @@ function Person(name, age) {
   this.age = age;
 }
 
-const person = new Person("John", 25);
-console.log(person);
+// const person = new Person("John", 25);
+// // console.log(person);
 
 // Object.create()
 const personPrototype = {
@@ -21,16 +21,18 @@ const personPrototype = {
     console.log("Hello!");
   },
 };
-// const person = Object.create(personPrototype);
-// console.log(person.greet());
+
+
+const person = Object.create(personPrototype);
+person.greet();
 
 // ES6 class
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-}
-const person = new Person("John", 25);
-console.log(person);
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+// const person = new Person("John", 25);
+// console.log(person);
 

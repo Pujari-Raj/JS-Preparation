@@ -49,7 +49,7 @@ let cricketname = {
   lastName: "TendulKar",
 };
 
-// heroname.getFullName.call(cricketname); // Sachin TendulKar
+heroname.getFullName.call(cricketname); // Sachin TendulKar
 
 //Case 2 - Borrowing function from global scope
 
@@ -115,4 +115,5 @@ getFullName.apply(name1, ["Sambalpur", "odisha"]);
 // console.log("Invoking getFullName using bind method");
 //bind returns a function
 let printMyName = getFullName.bind(name1, "Sambalpur", "odisha");
+console.log("function invocation");
 printMyName(); // (returned function is invoked i.e. indirect function invocation)

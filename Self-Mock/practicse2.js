@@ -27,7 +27,7 @@ const person = {
 
 // person.greet()
 
-// call, apply, bind (we have to use 2 objects here)
+// call, apply, bind (we have to use 2 objects here, use `this`)
 
 const Student = {
   name: "Aakay",
@@ -70,7 +70,7 @@ const fire = {
 const greetperson = Captain.greet.bind(fire);
 // greetperson("Namaste");
 
-// promises
+// promises (use only .then.catch)
 
 function getUsersData() {
   return new Promise((resolve, reject) => {

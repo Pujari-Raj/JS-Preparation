@@ -1,5 +1,6 @@
 // singleton object
 
+// when we create an object using Object Literal it create singleton Object
 // singleton -> Object literal (It creates a single instance of object, Changes made to the new object with the help of the global object will affect the global object(main object) )
 
 // const tinderUser = {};
@@ -17,16 +18,21 @@ const singletonObject = {
 singletonObject.property1 = "madhu";
 singletonObject.property2 = "raghu";
 
-// console.log(singletonObject.property1+"  "+singletonObject.property2);
+console.log(singletonObject.property1+"  "+singletonObject.property2);
 
 const anotherReference = {...singletonObject, property1 : "chaithra", property2:"hemanth"};
 
-// console.log(anotherReference.property1+"  "+anotherReference.property2);
+console.log(anotherReference.property1+"  "+anotherReference.property2);
 
-// console.log(singletonObject === anotherReference);
+console.log(singletonObject === anotherReference);
+
+// we can see changes made to property1,2 of singletonObject is getting affected here
+console.log(singletonObject);
 
 // non-singleton object
-// non singleton -> constructor (It creates a multiple instances of object in memory, Changes made to the new object with the help of the global object will not be affect the global object(main object) )
+
+// when we create an object using constructor it create non-singleton Object
+// non-singleton -> constructor (It creates a multiple instances of object in memory, Changes made to the new object with the help of the global object will not be affect the global object(main object) )
 
 // const tinderUser = new Object()
 

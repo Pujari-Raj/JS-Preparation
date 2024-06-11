@@ -10,11 +10,11 @@ const user = {
   },
 };
 
-// user.welcomeMessage();
-// user.username = "sam" // changing the value
-// user.welcomeMessage()
+user.welcomeMessage();
+user.username = "sam"; // changing the value
+user.welcomeMessage();
 
-// console.log(this);
+console.log(this);
 
 /**
  * Reason we can't access username using this
@@ -44,24 +44,24 @@ const user = {
  *    obj.chai();
  */
 
-// const chai = function () {
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
+const chai = function () {
+  let username = "hitesh";
+  console.log(this.username);
+};
 
-// chai()
+chai();
 
 // arrow-function
 
 /**
  * The arrow function's this refers to the this value of the surrounding context where it was defined, which is typically the global object (window in a browser or global in Node.js). However, the global object does not have a property named username, leading to undefined.
  */
-const chai = () => {
-  //   let username = "hitesh";
-  //   console.log(this.username);
-};
+// const chai = () => {
+//   //   let username = "hitesh";
+//   //   console.log(this.username);
+// };
 
-chai();
+// chai();
 
 // if you add curly braces you have always return some value
 // const addTwo = (num1, num2) => {
@@ -74,7 +74,7 @@ chai();
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
 // for returning a object without burly you have to use brackets
-const addTwo = (num1, num2) => ({ username: "hitesh" });
+const addTwo = (num1, num2) => ({ username: "ritesh" });
 
 // console.log(addTwo());
 

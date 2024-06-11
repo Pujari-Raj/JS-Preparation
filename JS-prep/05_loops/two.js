@@ -32,4 +32,4 @@ let teamScore = 299
 do {
     console.log(`teamScore is ${teamScore}`);
     teamScore++;
-} while (teamScore<=250);
+} while (teamScore<=210);

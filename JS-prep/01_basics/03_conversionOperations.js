@@ -1,5 +1,6 @@
 let score = "33";
 
+// to check datatype of variable
 console.log(typeof score);
 
 let valueInNUmber = Number(score);
@@ -15,11 +16,13 @@ console.log(stringValue);
 
 let isLoggedIn = 1;
 // console.log(typeof isLoggedIn); returns number
+
 let booleanIsLoggedIn = Boolean(isLoggedIn);
 console.log(typeof booleanIsLoggedIn);
 
 let Username = "sujeet";
 // console.log(typeof isLoggedIn); returns number
+
 let booleanusername = Boolean(Username);
 console.log(booleanusername);
 

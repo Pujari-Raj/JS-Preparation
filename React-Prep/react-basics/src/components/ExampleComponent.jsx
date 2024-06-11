@@ -4,6 +4,7 @@ const ExampleComponent = () => {
   const throwError = () => {
     throw new Error("This is a simulated error.");
   };
+  
   return (
     <>
       <div>ExampleComponent</div>

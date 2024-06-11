@@ -44,5 +44,5 @@ for (let i = 0; i < 10; i++) {
     // console.log(`7 is found!`);
     continue;
   }
-//   console.log(`Value of i is ${i}`);
+  // console.log(`Value of i is ${i}`);
 }
